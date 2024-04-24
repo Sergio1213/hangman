@@ -7,7 +7,6 @@ Este es un proyecto sencillo de Ahorcado (Hangman) desarrollado con React. El ob
 - El juego selecciona una palabra aleatoria de una lista.
 - Proporciona una pista sobre la palabra a adivinar.
 - Permite al jugador hacer suposiciones de letras.
-- Muestra el estado actual del ahorcado a medida que el jugador hace suposiciones incorrectas.
 - Indica si el jugador ha ganado o perdido el juego.
 
 ## Requisitos
