@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+# Proyecto de Ahorcado en React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto sencillo de Ahorcado (Hangman) desarrollado con React. El objetivo del juego es adivinar una palabra a partir de una pista proporcionada. Cada vez que haces una suposición incorrecta, se dibuja una parte del ahorcado. El juego termina cuando adivinas la palabra o cuando el ahorcado está completo.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- El juego selecciona una palabra aleatoria de una lista.
+- Proporciona una pista sobre la palabra a adivinar.
+- Permite al jugador hacer suposiciones de letras.
+- Muestra el estado actual del ahorcado a medida que el jugador hace suposiciones incorrectas.
+- Indica si el jugador ha ganado o perdido el juego.
 
-## Expanding the ESLint configuration
+## Requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Node.js](https://nodejs.org/) (v14 o superior)
+- [npm](https://www.npmjs.com/) (o [yarn](https://yarnpkg.com/))
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clona el repositorio:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+    ```bash
+    git clone <https://github.com/Sergio1213/hangman.git>
+    ```
+
+2. Ve al directorio del proyecto:
+
+    ```bash
+    cd hangman
+    ```
+
+3. Instala las dependencias:
+
+    ```bash
+    npm install
+    ```
+
+## Ejecución
+
+Para iniciar la aplicación, ejecuta:
+
+```bash
+npm run dev
