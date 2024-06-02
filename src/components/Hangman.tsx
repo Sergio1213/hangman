@@ -8,7 +8,7 @@ interface HangmanProps {
   groupList: string[];
 }
 
-const Hangman = ({ words, fruitsList, appliancesList }: HangmanProps) => {
+const Hangman = ({ words, fruitsList, appliancesList,groupList }: HangmanProps) => {
   const [selectedWord, setSelectedWord] = useState(words[0]);
   const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
   const [errorCount, setErrorCount] = useState(0);
