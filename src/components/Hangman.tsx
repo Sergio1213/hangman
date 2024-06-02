@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 interface HangmanProps {
   words: string[];
-  // Puedes agregar las listas como propiedades para que sea más flexible y reutilizable
   fruitsList: string[];
   appliancesList: string[];
   groupList: string[];
