@@ -4,10 +4,10 @@ interface HangmanProps {
   words: string[];
   fruitsList: string[];
   appliancesList: string[];
-  groupList: string[];
+
 }
 
-const Hangman = ({ words, fruitsList, appliancesList,groupList }: HangmanProps) => {
+const Hangman = ({ words, fruitsList, appliancesList}: HangmanProps) => {
   const [selectedWord, setSelectedWord] = useState(words[0]);
   const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
   const [errorCount, setErrorCount] = useState(0);
@@ -18,9 +18,7 @@ const Hangman = ({ words, fruitsList, appliancesList,groupList }: HangmanProps) 
       return 'the word is a friut';
     } else if (appliancesList.includes(selectedWord)) {
       return 'the word is an electronic';
-    } else if(groupList.includes(selectedWord)){
-       return 'the word is a musical band';
-    }
+    } 
     return ''; // Si la palabra no pertenece a ninguna lista
   };
 
