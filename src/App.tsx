@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Welcome />
-      <Hangman  words={allWords} fruitsList={words} appliancesList={appliances} groupList{group} />
+      <Hangman  words={allWords} fruitsList={words} appliancesList={appliances} groupList={group} />
     </div>
   );
 }
