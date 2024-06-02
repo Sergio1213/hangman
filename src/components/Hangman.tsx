@@ -17,7 +17,7 @@ const Hangman = ({ words, fruitsList, appliancesList }: HangmanProps) => {
     if (fruitsList.includes(selectedWord)) {
       return 'the word is a friut';
     } else if (appliancesList.includes(selectedWord)) {
-      return 'the word is an electornic';
+      return 'the word is an electronic';
     }
     return ''; // Si la palabra no pertenece a ninguna lista
   };
