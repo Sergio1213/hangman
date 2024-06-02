@@ -5,6 +5,7 @@ interface HangmanProps {
   // Puedes agregar las listas como propiedades para que sea más flexible y reutilizable
   fruitsList: string[];
   appliancesList: string[];
+  groupList: string[];
 }
 
 const Hangman = ({ words, fruitsList, appliancesList }: HangmanProps) => {
@@ -18,6 +19,8 @@ const Hangman = ({ words, fruitsList, appliancesList }: HangmanProps) => {
       return 'the word is a friut';
     } else if (appliancesList.includes(selectedWord)) {
       return 'the word is an electronic';
+    } else if(groupList.includes(selectedWord)){
+       return 'the word is a musical band';
     }
     return ''; // Si la palabra no pertenece a ninguna lista
   };
